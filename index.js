@@ -1,6 +1,6 @@
 /**
  * Scapegoat
- * https://github.com/brentertz/scapegoat
+ * https://github.com/ULL-DSI-1617/scapegoat
  *
  * Copyright (c) 2014 Brent Ertz
  * Licensed under the MIT license.

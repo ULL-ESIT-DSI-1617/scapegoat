@@ -8,13 +8,13 @@ See the associated blog post, ["Creating and publishing a node.js module."](http
 ## Installation
 
 ```shell
-  npm install scapegoat --save
+  npm install @ull-esit-dsi-1617/scapegoat --save
 ```
 
 ## Usage
 
 ```js
-  var scapegoat = require('scapegoat')
+  var scapegoat = require('@ull-esit-dsi-1617/scapegoat'),
       escape = scapegoat.escape,
       unescape = scapegoat.unescape;
 
@@ -34,6 +34,15 @@ See the associated blog post, ["Creating and publishing a node.js module."](http
 ## API Documents
 
 [See Documentation at https://ull-esit-dsi-1617.github.io/scapegoat/](https://ull-esit-dsi-1617.github.io/scapegoat/)
+
+To generate the docs we use [documentation.js](http://documentation.js.org/):
+
+```shell
+   npm run doc
+```
+
+Install `$ npm install -g documentation`
+
 
 ## Contributing
 

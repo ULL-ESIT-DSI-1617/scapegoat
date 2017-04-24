@@ -31,6 +31,10 @@ See the associated blog post, ["Creating and publishing a node.js module."](http
    npm test
 ```
 
+## API Documents
+
+[See Documentation at https://ull-esit-dsi-1617.github.io/scapegoat/](https://ull-esit-dsi-1617.github.io/scapegoat/)
+
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.

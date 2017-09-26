@@ -5,6 +5,10 @@ Scapegoat
 
 (for a badge like this see [https://badge.fury.io/for/js](https://badge.fury.io/for/js))
 
+[![Build Status](https://travis-ci.org/ULL-ESIT-DSI-1617/scapegoat.svg?branch=master)](https://travis-ci.org/ULL-ESIT-DSI-1617/scapegoat)
+
+(for a badge like this see [Travis CI: Embedding Status Images](https://docs.travis-ci.com/user/status-images/))
+
 A minimal node module providing utility methods to `escape` and `unescape` HTML entities
 
 * See the associated blog post, ["Creating and publishing a node.js module."](https://quickleft.com/blog/creating-and-publishing-a-node-js-module/)

@@ -1,6 +1,10 @@
 Scapegoat
 =========
 
+[![npm version](https://badge.fury.io/js/%40ull-esit-dsi-1617%2Fscapegoat.svg)](https://badge.fury.io/js/%40ull-esit-dsi-1617%2Fscapegoat)
+
+(for a badge like this see [https://badge.fury.io/for/js](https://badge.fury.io/for/js))
+
 A minimal node module providing utility methods to `escape` and `unescape` HTML entities
 
 * See the associated blog post, ["Creating and publishing a node.js module."](https://quickleft.com/blog/creating-and-publishing-a-node-js-module/)

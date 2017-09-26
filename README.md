@@ -33,7 +33,10 @@ A minimal node module providing utility methods to `escape` and `unescape` HTML 
 ```
 
 See also
-[Repo ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat) to test this module
+[Repo ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat) to test this module
+
+See also the [**main** repo](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module) made of this repo and the 
+prueba repo
 
 ## API Documents
 

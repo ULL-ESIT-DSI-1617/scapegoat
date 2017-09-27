@@ -9,7 +9,8 @@ var special = {
   '&gt;': '>'
 };
 var values = Object.values(special);
-var re = new RegExp('(' + values.join('|') + ')', 'g');
+var specialRe = new RegExp('(' + values.join('|') + ')', 'g');
+var escapedRe = new RegExp('(' + Object.keys(special).join('|') + ')', 'g');
 var reverse = {};
 for (var key in special) {
     reverse[special[key]] = key;
@@ -35,7 +36,7 @@ module.exports = {
   escape: function(html) {
     if (!html) return '';
 
-    return String(html).replace(re, (match) => reverse[match]);
+    return String(html).replace(specialRe, (match) => reverse[match]);
   },
 
   /**
@@ -45,12 +46,8 @@ module.exports = {
    * @return {String}
    */
   unescape: function(html) {
-    if (!html) {
-      return '';
-    }
+    if (!html) return '';
 
-    var re = new RegExp('(' + Object.keys(special).join('|') + ')', 'g');
-
-    return String(html).replace(re, (match) => special[match]);
+    return String(html).replace(escapedRe, (match) => special[match]);
   }
 };

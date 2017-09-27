@@ -1,5 +1,6 @@
 /** @ignore */
-var {special, reverse, specialRe, escapedRe} = require("src/init");
+// Better local require() paths for Node.js https://gist.github.com/branneman/8048520
+var {special, reverse, specialRe, escapedRe} = require(__dirname+"/src/init");
 
 
 /**

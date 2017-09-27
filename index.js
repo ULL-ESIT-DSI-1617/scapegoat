@@ -8,6 +8,13 @@ var special = {
   '&lt;': '<',
   '&gt;': '>'
 };
+var values = Object.values(special);
+var re = new RegExp('(' + values.join('|') + ')', 'g');
+var reverse = {};
+for (var key in special) {
+    reverse[special[key]] = key;
+}
+
 
 /**
  * Scapegoat
@@ -26,20 +33,9 @@ module.exports = {
    * @returns {String} 
    */
   escape: function(html) {
-    if (!html) {
-      return '';
-    }
+    if (!html) return '';
 
-    var values = Object.keys(special).map(function(key) { return special[key]; });
-    var re = new RegExp('(' + values.join('|') + ')', 'g');
-
-    return String(html).replace(re, function(match) {
-      for (var key in special) {
-        if (special.hasOwnProperty(key) && special[key] === match) {
-          return key;
-        }
-      }
-    });
+    return String(html).replace(re, (match) => reverse[match]);
   },
 
   /**
@@ -55,8 +51,6 @@ module.exports = {
 
     var re = new RegExp('(' + Object.keys(special).join('|') + ')', 'g');
 
-    return String(html).replace(re, function(match) {
-      return special[match];
-    });
+    return String(html).replace(re, (match) => special[match]);
   }
 };

@@ -1,5 +1,3 @@
-
-
 /** @ignore */
 var special = {
   '&amp;': '&',

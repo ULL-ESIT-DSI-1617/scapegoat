@@ -4,7 +4,7 @@
   "description": "A small library providing utility methods to escape and unescape HTML entities",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
+    "test": "mocha --reporter spec",
     "doc": "documentation build index.js -f html -o docs",
     "serve-doc": "http-server docs/ -o",
     "push": "npm run doc; git add docs; git ci -am no-message; git push"

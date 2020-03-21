@@ -14,7 +14,7 @@ Scapegoat
 A minimal node module providing utility methods to `escape` and `unescape` HTML entities
 
 * See the associated blog post, [Creating and publishing a node.js module](https://ull-esit-dsi-1617.github.io/scapegoat/article) Years ago was here: https://quickleft.com/blog/creating-and-publishing-a-node-js-module/
-* See [Node.js - How to test your new NPM module without publishing it every 5 minutes](https://medium.com/@the1mills/how-to-test-your-npm-module-without-publishing-it-every-5-minutes-1c4cb4b369be)
+* See [Node.js - How to test your new NPM module without publishing it every 5 minutes](https://ull-esit-dsi-1617.github.io/scapegoat/npm-link)
 
 ## Installation
 

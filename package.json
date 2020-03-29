@@ -12,8 +12,7 @@
     "production:test": "cd ../prueba-scapegoat && npm test",
     "patch": "npm run commit; npm version patch",
     "patch:publish": "npm run patch; git push; npm publish",
-    "patch:publish:test": "npm run patch:publish; npm run production:test",
-    "patch:publish:production:test": "npm run patch:publish && npm run production:test"
+    "patch:publish:production:test": "npm run patch:publish; npm run production:test"
   },
   "repository": {
     "type": "git",

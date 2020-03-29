@@ -6,9 +6,10 @@
   "scripts": {
     "test": "mocha --reporter spec",
     "doc": "documentation build index.js -f html -o docs",
-    "serve-doc": "http-server docs/ -o",
+    "serve:doc": "http-server docs/ -o",
     "commit": "npm run doc; git add docs; git ci -am `jq .version package.json`",
-    "push": "npm run commit; git push"
+    "push": "npm run commit; git push",
+    "production:test": "cd ../prueba-scapegoat && npm test"
   },
   "repository": {
     "type": "git",

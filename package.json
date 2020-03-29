@@ -9,7 +9,10 @@
     "serve:doc": "http-server docs/ -o",
     "commit": "npm run doc; git add docs; git ci -am `jq .version package.json`",
     "push": "npm run commit; git push",
-    "production:test": "cd ../prueba-scapegoat && npm test"
+    "production:test": "cd ../prueba-scapegoat && npm test",
+    "patch": "npm version patch",
+    "patch:publish": "npm run patch && npm publish",
+    "patch:publish:test": "npm run patch:publish && npm run production:test"
   },
   "repository": {
     "type": "git",

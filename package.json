@@ -1,6 +1,6 @@
 {
   "name": "@ull-esit-dsi-1617/scapegoat",
-  "version": "1.3.9",
+  "version": "1.3.10",
   "description": "A small library providing utility methods to escape and unescape HTML entities",
   "main": "index.js",
   "scripts": {

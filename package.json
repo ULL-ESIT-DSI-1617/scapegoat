@@ -1,6 +1,6 @@
 {
   "name": "@ull-esit-dsi-1617/scapegoat",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "A small library providing utility methods to escape and unescape HTML entities",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,10 @@
     "commit": "npm run doc; git add docs; git ci -am `jq .version package.json`",
     "push": "npm run commit; git push",
     "production:test": "cd ../prueba-scapegoat && npm test",
-    "patch": "npm version patch",
-    "patch:publish": "npm run patch && npm publish",
-    "patch:publish:test": "npm run patch:publish && npm run production:test"
+    "patch": "npm run commit; npm version patch",
+    "patch:publish": "npm run patch; git push; npm publish",
+    "patch:publish:test": "npm run patch:publish; npm run production:test",
+    "patch:publish:production:test": "npm run patch:publish && npm run production:test"
   },
   "repository": {
     "type": "git",

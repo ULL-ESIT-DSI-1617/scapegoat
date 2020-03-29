@@ -1,4 +1,4 @@
-name: CI fro scapegoat module
+name: CI for scapegoat module
 
 on: # when this action should be triggered?
   push:
